@@ -103,8 +103,10 @@ export default class extends Controller {
     this.clearSelectedsuggestion()
 
     if (event.key === "ArrowUp") {
+      event.preventDefault()
       this.suggestionIndex -= 1
     } else if (event.key === "ArrowDown") {
+      event.preventDefault()
       this.suggestionIndex += 1
     }
 
